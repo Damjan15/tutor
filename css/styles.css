@@ -429,6 +429,61 @@ img {
   margin-right: 0.5rem;
 }
 
+/* ====== STATS ====== */
+.stats {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("../images/stats-background.jpg") center center/cover no-repeat;
+  color: #fff;
+}
+
+.stats-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.stats img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.stats-content {
+  max-width: 500px;
+}
+
+.stats-numbers {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stats-numbers h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.stats-numbers p {
+  font-size: 0.8rem;
+}
+
+.stats-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.stats .btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}
+
 /* ====== MEDIA QUERIES ====== */
 /* Screens less than 1200 */
 @media screen and (max-width: 1200px) {
@@ -489,6 +544,15 @@ img {
   }
 
   .details + .details .details-flex {
+    flex-direction: column;
+  }
+
+  .stats-flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .stats-numbers {
     flex-direction: column;
   }
 }
