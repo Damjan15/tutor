@@ -119,6 +119,15 @@ img {
   margin: 4rem 0;
 }
 
+/* Text Colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
 /* ====== NAVBAR ====== */
 .navbar {
   padding: 1rem 2rem;
@@ -359,6 +368,24 @@ img {
   width: 50%;
 }
 
+/* ====== TAKEAWAYS ====== */
+.takeaways-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+.takeaways-cards .card {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.takeaways-cards .card i {
+  margin-right: 1rem;
+}
+
 /* ====== MEDIA QUERIES ====== */
 /* Screens less than 1200 */
 @media screen and (max-width: 1200px) {
@@ -400,7 +427,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .chapter-cards {
+  .chapter-cards,
+  .takeaways-cards {
     grid-template-columns: 1fr;
   }
 }
