@@ -73,13 +73,18 @@ img {
 /* ====== NAVBAR ====== */
 .navbar {
   padding: 1rem 2rem;
-  background: black; /* Temporary */
+  background: transparent;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.navbar-scroll {
+  background-color: rgba(235, 77, 85, 0.8);
+  backdrop-filter: blur(10px);
 }
 
 .navbar .navbar-flex {
