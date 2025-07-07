@@ -578,6 +578,77 @@ img {
   margin: 2rem 0;
 }
 
+/* ====== CONTACT PAGE ====== */
+/* Inner Header */
+.inner-header {
+  background: var(--primary-color);
+  color: #fff;
+  height: 250px;
+  padding-top: 8rem;
+}
+
+.inner-header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact-form p {
+  margin-bottom: 3rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  padding: 1.2rem 1rem;
+  border: 1px solid #ccc;
+  font-size: medium;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+.contact-form .btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Location */
+.location h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.location p {
+  margin-bottom: 2rem;
+}
+
+.location .map {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  margin-bottom: 3rem;
+  padding-bottom: 50%;
+  border-radius: 0.25rem;
+}
+
+.location .map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: none;
+}
+
 /* ====== MEDIA QUERIES ====== */
 /* Screens less than 1200 */
 @media screen and (max-width: 1200px) {
